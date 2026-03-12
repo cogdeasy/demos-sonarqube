@@ -108,7 +108,7 @@ export default function ActivityPage() {
                     <TrendingUp size={12} />
                   )}
                   <span>
-                    {isNeutral ? 'No change' : `${Math.abs(diff)}${item.unit || ''} ${isPositive ? 'improvement' : 'increase'}`}
+                    {isNeutral ? 'No change' : `${Number(Math.abs(diff).toFixed(1))}${item.unit || ''} ${isPositive ? 'improvement' : 'increase'}`}
                   </span>
                 </div>
               </div>
